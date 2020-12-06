@@ -19,5 +19,4 @@ public class Furnace : MonoBehaviour
             HeatingPlace.SetActive(false);
         }
     }
-
 }

@@ -63,17 +63,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ClockUI.cs" />
     <Compile Include="Assets\Scripts\CameraControler.cs" />
+    <Compile Include="Assets\Scripts\ClockUI.cs" />
     <Compile Include="Assets\Scripts\Furnace.cs" />
+    <Compile Include="Assets\Scripts\MagicWorkTable.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\Player\Equipment.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\Smithing.cs" />
     <Compile Include="Assets\Scripts\Recources\Iron.cs" />
+    <Compile Include="Assets\Scripts\Recources\IronScraps.cs" />
+    <Compile Include="Assets\Scripts\Recources\Skin.cs" />
     <Compile Include="Assets\Scripts\Recources\Wood.cs" />
-    <Compile Include="Assets\Tree.cs" />
-    <Compile Include="Assets\WorkShop.cs" />
+    <Compile Include="Assets\Scripts\SandStone.cs" />
+    <Compile Include="Assets\Scripts\Tree.cs" />
+    <Compile Include="Assets\Scripts\WorkShop.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/_ProjectFolder/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

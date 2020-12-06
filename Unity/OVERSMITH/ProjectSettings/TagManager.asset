@@ -16,6 +16,22 @@ TagManager:
   - AxeHead
   - HammerHead
   - Water
+  - Leather
+  - HardLeather
+  - TwoHandedSwordHandle
+  - TwoHandedSwordBlade
+  - TwoHandedHammerHandle
+  - TwoHandedHammerHead
+  - TwoHandedAxeHandle
+  - TwoHandedAxeBlade
+  - GreatSword
+  - GreatWarHammer
+  - GreatAxe
+  - ExcelentGreatSword
+  - MagicGreatAxe
+  - Meteorite
+  - ExcelentGreatAxe
+  - ExcelentGreatWarHammer
   layers:
   - Default
   - TransparentFX
