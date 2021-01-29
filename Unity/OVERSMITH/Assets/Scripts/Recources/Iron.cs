@@ -13,6 +13,9 @@ public class Iron : MonoBehaviour
     public GameObject axeHead;
     public GameObject hammerHead;
 
+    public Material coldMaterial;
+    public Material hotMaterial;
+
     public bool HotIron;
     private void OnTriggerEnter(Collider other)
     {
@@ -37,11 +40,13 @@ public class Iron : MonoBehaviour
         Debug.Log("Hot!");
         HotIron = true;
         Invoke("Cold", 30f);
+        transform.GetComponentInChildren<Renderer>().material = hotMaterial;
     }
     void Cold()
     {
         HotIron = false;
         Hits = 0;
+        transform.GetComponentInChildren<Renderer>().material = coldMaterial;
     }
 
     private void OnCollisionEnter(Collision collision)

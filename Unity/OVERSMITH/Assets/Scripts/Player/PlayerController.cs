@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    #region
+
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+
     [SerializeField]
     private float movementSpeed;
+    public GameObject holdObjectTransform;
     //public Animator anim;
 
     private void Start()

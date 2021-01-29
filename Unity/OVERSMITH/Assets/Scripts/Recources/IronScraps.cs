@@ -12,6 +12,10 @@ public class IronScraps : MonoBehaviour
     public GameObject hoof;
 
     public bool HotIron;
+
+    public Material coldMaterial;
+    public Material hotMaterial;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "FurnaceHeat")
@@ -35,11 +39,13 @@ public class IronScraps : MonoBehaviour
         Debug.Log("Hot!");
         HotIron = true;
         Invoke("Cold", 30f);
+        transform.GetComponentInChildren<Renderer>().material = hotMaterial;
     }
     void Cold()
     {
         HotIron = false;
         Hits = 0;
+        transform.GetComponentInChildren<Renderer>().material = coldMaterial;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -53,11 +59,13 @@ public class IronScraps : MonoBehaviour
     {
         nails.SetActive(true);
         scraps.SetActive(false);
+        gameObject.tag = "Nails";
     }
     void Hoof()
     {
         nails.SetActive(false);
         hoof.SetActive(true);
+        gameObject.tag = "Hoof";
     }
     void Scraps()
     {

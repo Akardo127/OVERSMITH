@@ -32,6 +32,14 @@ TagManager:
   - Meteorite
   - ExcelentGreatAxe
   - ExcelentGreatWarHammer
+  - Wood
+  - Iron
+  - Mithril
+  - Nails
+  - Sword
+  - Axe
+  - Hoof
+  - MayITakeYouOrder
   layers:
   - Default
   - TransparentFX
